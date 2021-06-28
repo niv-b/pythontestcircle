@@ -41,7 +41,7 @@ class TestHello(unittest.TestCase):
 if __name__ == '__main__':
 
     ############# To Generate Test Reports  #############
-    runner = xmlrunner.XMLTestRunner(output='test-reports')
+    runner = xmlrunner.XMLTestRunner(output='test-results/unittest')
     unittest.main(testRunner=runner)
     #####################################################
     unittest.main()
