@@ -36,7 +36,7 @@ class TestHello(unittest.TestCase):
         end = re.search("</h1>",message).start()
         message = message[start+4:end]
 
-        self.assertEqual(message, "alice: A nerd")
+        self.assertEqual(message, "dori: A nerd")
 
 if __name__ == '__main__':
 
