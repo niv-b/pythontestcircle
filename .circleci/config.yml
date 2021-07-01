@@ -30,6 +30,9 @@ jobs:
     # Then run your tests!
     # CircleCI will report the results back to your VCS provider.
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "6f:5b:bc:7c:07:94:78:72:d3:8c:36:ae:66:07:91:30"
       - checkout
       - python/install-packages:
           pkg-manager: pip
