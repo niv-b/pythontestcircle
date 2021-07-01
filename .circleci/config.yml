@@ -44,4 +44,7 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-file
+      - run:
+          name: Last commit
+          command: echo ${CIRCLE_SHA1}
 
