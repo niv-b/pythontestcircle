@@ -41,6 +41,7 @@ jobs:
       - run:
           name: Last commit
           command:  | 
+              git rebase --continue
               git config --global user.email "nivbarchel@gmail.com"
               git config --global user.name "niv-b"
               git tag -a v2.0 ${CIRCLE_SHA1}
