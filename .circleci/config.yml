@@ -43,6 +43,8 @@ jobs:
           command:  | 
               git config --global user.email "nivbarchel@gmail.com"
               git config --global user.name "niv-b"
+              git tag -a v1.2 ${CIRCLE_SHA1} -m "Message here"
+              git push origin v1.2
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
